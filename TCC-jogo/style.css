@@ -1,0 +1,107 @@
+/* Alteração geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sobre o Cabeçalho */
+
+header {
+  background: rgb(0, 0, 0);
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/* Itens do Cabeçalho(nav) */
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 250px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff0000;
+}
+
+/* Janela do jogo */
+
+.janela {
+    background: rosybrown;
+    height: 600px;
+    width: 1000px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    position: absolute;
+    overflow: hidden;
+}
+
+/* Jogador */
+
+#player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    height: 50px;
+}
+
+/* Enemy */
+/*
+.enemy {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    border-radius: 50%;
+}
+*/
+
+/* Imagens do lado direto e esquerdo */
+
+.img-left, .img-right {
+  position: fixed;   
+  top: 0;
+  z-index: 1000;
+}
+
+.img-left {
+  left: 0;
+}
+
+.img-right {
+  right: 0;
+}
+
+.img-right img{
+    width: 130px;
+    height: 1000px;
+    display: block;
+}
+
+.img-right:hover {
+        width: 130px;
+        height: 500px;
+}
+
+.img-left img {
+  width: 130px;  
+  height: 1000px;
+  display: block;
+}
+
+/* guia de controles do jogo */
+
